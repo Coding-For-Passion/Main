@@ -5,3 +5,4 @@ Goal: Learn AI
 
 Coding Log - November 23rd, 2017
 
+Members: Alexander, Enzo, and Riley
