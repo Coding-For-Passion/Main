@@ -4,6 +4,6 @@ For SOURCE 8 in the 2017 - 2018 school year.
 
 Goal: Learn AI
 
-Coding Log - November 23rd, 2017
+Go to https://rywee.github.io/Coding-Passion-Project/ to get started.
 
 Members: Alexander, Enzo, and Riley
