@@ -1,8 +1,9 @@
 body {
   background-color: Aqua;
+  color: ORANGE;
 }
 h1 {
-  color: antiqueWhite;
+ 
   font-family: 'Open Sans';
   padding-top: 100px;
   text-align: left;
@@ -10,7 +11,7 @@ h1 {
 }
 
 h2 {
-  color: AntiqueWhite;
+  
   font-family: 'Open Sans', serif;
   font-weight: 100;
   padding-bottom: 30px;
@@ -28,7 +29,7 @@ h3 {
 }
 
 h2 {
-  color: AntiqueWhite;
+  
   font-family: 'Open Sans', serif;
   font-weight: 100;
   padding-bottom: 30px;
@@ -37,7 +38,7 @@ h2 {
 }
 
 p {
-  color: AntiqueWhite;
+  
   font-family: 'Open Sans', serif;
   font-weight: 100;
   text-align: left;
@@ -45,7 +46,7 @@ p {
 }
 
 br {
-    color: AntiqueWhite;
+    
     font-family: 'Open Sans', serif;
     font-weight: 100;
     text-align: left;
