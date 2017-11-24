@@ -1,5 +1,8 @@
+body {
+  background-color:DarkBlue;
+}
 h1 {
-  color: #f90c0c;
+  color: antiqueWhite;
   font-family: 'Tahoma', serif;
   padding-top: 100px;
   text-align: left;
@@ -7,7 +10,7 @@ h1 {
 }
 
 h2 {
-  color: #f90c0c;
+  color: antiqueWhite;
   font-family: 'Impact', serif;
   font-weight: 100;
   padding-bottom: 30px;
@@ -16,7 +19,7 @@ h2 {
 }
 
 h3 {
-  color: #f90c0c;
+  color: AntiqueWhite;
   font-family: 'Century Gothic', serif;
   font-weight: 100;
   padding-bottom: 30px;
@@ -25,7 +28,7 @@ h3 {
 }
 
 h2 {
-  color: #f90c0c;
+  color: AntiqueWhite;
   font-family: 'Impact', serif;
   font-weight: 100;
   padding-bottom: 30px;
@@ -34,7 +37,7 @@ h2 {
 }
 
 p {
-  color: #f90c0c;
+  color: AntiqueWhite;
   font-family: 'Lucida Sans Unicode', serif;
   font-weight: 100;
   text-align: left;
@@ -42,7 +45,7 @@ p {
 }
 
 br {
-    color: #f90c0c
+    color: AntiqueWhite;
     font-family: 'Georgia', serif;
     font-weight: 100;
     text-align: left;
