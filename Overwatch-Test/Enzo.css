@@ -1,9 +1,9 @@
 body {
-  background-color:Blue;
+  background-color: #7FDBFF;
 }
 h1 {
   color: antiqueWhite;
-  font-family: 'Tahoma', serif;
+  font-family: 'Open Sans';
   padding-top: 100px;
   text-align: left;
   width: 60%;
@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   color: antiqueWhite;
-  font-family: 'Impact', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 100;
   padding-bottom: 30px;
   text-align: left;
@@ -20,7 +20,7 @@ h2 {
 
 h3 {
   color: AntiqueWhite;
-  font-family: 'Century Gothic', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 100;
   padding-bottom: 30px;
   text-align: left;
@@ -29,7 +29,7 @@ h3 {
 
 h2 {
   color: AntiqueWhite;
-  font-family: 'Impact', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 100;
   padding-bottom: 30px;
   text-align: left;
@@ -38,7 +38,7 @@ h2 {
 
 p {
   color: AntiqueWhite;
-  font-family: 'Lucida Sans Unicode', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 100;
   text-align: left;
   width: 100%;
@@ -46,7 +46,7 @@ p {
 
 br {
     color: AntiqueWhite;
-    font-family: 'Georgia', serif;
+    font-family: 'Open Sans', serif;
     font-weight: 100;
     text-align: left;
     width: 100%;
