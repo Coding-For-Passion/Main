@@ -20,7 +20,7 @@ p {
   background-color: Aqua;
 }
 img {
-  border: 10px solid transparent;
+  border: 10px solid White;
   padding: 15px;
   border-image: url(download.jpg) 30 round;
 }
