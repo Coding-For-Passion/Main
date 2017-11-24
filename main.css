@@ -19,3 +19,6 @@ p {
   text-align: center;
   background-color: Aqua;
 }
+a {
+  border: 5px solid White;
+}
