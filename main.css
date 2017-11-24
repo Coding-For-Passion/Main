@@ -22,5 +22,5 @@ p {
 img {
   border: 10px solid White;
   padding: 15px;
-  border-image: url(download.jpg) 30 round;
+  border-image: url(border.png) 30 round;
 }
