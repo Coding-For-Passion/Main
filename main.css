@@ -18,7 +18,7 @@ img {
   border-image: url(border.jpeg) 30 round;
 }
 h2 {
-  font-family: "Audiowide", cursive;
+  font-family: 'Audiowide', cursive;
   color: Orange;
   text-align: center;
   background-color: Aqua;
