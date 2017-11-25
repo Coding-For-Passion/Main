@@ -6,7 +6,7 @@ body {
   background-color: Aqua;
 }
 h2 {
-  font-family: 'Audiowide';
+  font-family: 'Audiowide', sans-serif;
   font-weight: 400;
   color: Orange;
   text-align: center;
