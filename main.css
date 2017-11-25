@@ -5,13 +5,6 @@ body {
   text-align: center;
   background-color: Aqua;
 }
-h2 {
-  font-family: 'Audiowide', sans-serif;
-  font-weight: 400;
-  color: Orange;
-  text-align: center;
-  background-color: Aqua;
-}
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -24,3 +17,10 @@ img {
   padding: 2px;
   border-image: url(border.jpeg) 30 round;
 }
+h2 {
+  font-family: 'Audiowide', cursive;
+  font-weight: 400;
+  color: Orange;
+  text-align: center;
+  background-color: Aqua;
+} 
