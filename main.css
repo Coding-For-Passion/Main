@@ -20,7 +20,7 @@ p {
   background-color: Aqua;
 }
 img {
-  border: 10px solid White;
-  padding: 15px;
-  border-image: url(border.png) 30 round;
+  border: 20px solid White;
+  padding: 2px;
+  border-image: url(border.jpeg) 30 round;
 }
