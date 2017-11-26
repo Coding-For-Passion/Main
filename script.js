@@ -1,5 +1,5 @@
 var project = 0;
-function addProject (x) {
+function addProject(x) {
   project = project + x;
 }
 var word = " projects";
