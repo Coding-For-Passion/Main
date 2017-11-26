@@ -1,10 +1,10 @@
 var project = 0;
 function addProject (x) {
-project = project + x;
+  project = project + x;
 }
 var word = " projects";
 var word2 = "are";
-if (project == 1) } {
+if (project == 1) {
   word = " project"
   word2 = "is"
 }
