@@ -35,3 +35,4 @@ var popupBlockerChecker = {
     };
 var popup = window.open("mailto:wesbob12@gmail.com" + "?subject=" + subject + "&body=" + body);
 popupBlockerChecker.check(popup);
+}
