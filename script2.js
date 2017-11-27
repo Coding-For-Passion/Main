@@ -1,7 +1,7 @@
 alert("Sign-In is currently disabled on the main page, A Sign-in popup will appear shortly!");
 var f = confirm("Are you sure you want to make changes to this website(please note changes will not be imediate)");
 if (f = false) {
-Location.replace("index.html");
+        Location.replace("index.html");
 }
 else {
 var subject = prompt("What is the subject you would like to fix?");
@@ -25,10 +25,10 @@ var popupBlockerChecker = {
             }else {
                 _scope._displayError();
             }
-        }
+        },
         _is_popup_blocked: function(scope, popup_window) {
             if ((popup_window.innerHeight > 0)==false){ scope._displayError(); }
-        }
+        },
         _displayError: function(){
             alert("Popup Blocker is enabled! Please add this site to your exception list.");
         }
