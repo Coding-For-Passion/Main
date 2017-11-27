@@ -25,10 +25,10 @@ var popupBlockerChecker = {
             }else {
                 _scope._displayError();
             }
-        },
+        }
         _is_popup_blocked: function(scope, popup_window) {
             if ((popup_window.innerHeight > 0)==false){ scope._displayError(); }
-        },
+        }
         _displayError: function(){
             alert("Popup Blocker is enabled! Please add this site to your exception list.");
         }
