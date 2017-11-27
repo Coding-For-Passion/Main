@@ -8,5 +8,9 @@ var subject = prompt("what subject would you like to fix?");
 var body = prompt("what would you like to fix?");
 subject = "Fix: " + subject;
 body = "A user has requested to fix: " + body;
-window.open('mailto:wesbob12@gmail.com?subject=subject&body=body');
+
+var newWin = window.open('mailto:wesbob12@gmail.com?subject=subject&body=body');             
+if(!newWin || newWin.closed || typeof newWin.closed=='undefined') 
+{ 
+     alert("Alert, in order to send your request, please enable popups! Hit \'OK\' when you have enable popups")
 }
