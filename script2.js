@@ -4,13 +4,34 @@ if (f = false) {
 Location.replace("index.html")
 }
 else {
-var subject = prompt("what subject would you like to fix?");
-var body = prompt("what would you like to fix?");
+var subject = prompt("What is the subject you would like to fix?");
+var body = prompt("What exactly would you like to fix?");
 subject = "Fix: " + subject;
 body = "A user has requested to fix: " + body;
 
-var newWin = window.open('mailto:wesbob12@gmail.com?subject=subject&body=body');             
-if(!newWin || newWin.closed || typeof newWin.closed=='undefined') 
-{ 
-     alert("Alert, in order to send your request, please enable popups! Hit \'OK\' when you have enable popups")
-}
+var popupBlockerChecker = {
+        check: function(popup_window){
+            var _scope = this;
+            if (popup_window) {
+                if(/chrome/.test(navigator.userAgent.toLowerCase())){
+                    setTimeout(function () {
+                        _scope._is_popup_blocked(_scope, popup_window);
+                     },200);
+                }else{
+                    popup_window.onload = function () {
+                        _scope._is_popup_blocked(_scope, popup_window);
+                    };
+                }
+            }else{
+                _scope._displayError();
+            }
+        },
+        _is_popup_blocked: function(scope, popup_window){
+            if ((popup_window.innerHeight > 0)==false){ scope._displayError(); }
+        },
+        _displayError: function(){
+            alert("Popup Blocker is enabled! Please add this site to your exception list.");
+        }
+    };
+var popup = window.open("mailto:wesbob12@gmail.com" + "?subject=" + subject + "&body=" + body);
+popupBlockerChecker.check(popup);
