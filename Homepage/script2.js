@@ -17,7 +17,7 @@ else {
 			break;
         }
 	}
-		subject = "Fix: " + subject + " From: " + name + " Email: " + email;
+		subject = "Fix: " + subject + " From: " + name;
 		body = "A user has requested to fix: " + body;
 		
 		var popupBlockerChecker = {
