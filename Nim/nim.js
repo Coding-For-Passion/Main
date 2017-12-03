@@ -16,7 +16,9 @@ function AI() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;}
   else if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Lose!!"
+    location.replace('../Homepage/homepage.html');
   } else if (nims < 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
+    location.replace('../Homepage/homepage.html');
   }
 }
