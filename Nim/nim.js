@@ -15,9 +15,7 @@ function AI() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
   if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Lose!!"
-    exit();
   } else if (nims < 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
-    exit();
   }
 }
