@@ -1,15 +1,17 @@
-var f = confirm("Are you sure you want to make changes to this website (please note changes will not be immediate)");
+var f = confirm("Are you sure you want to make changes to this website? Please note changes will not be immediate");
 if (f == false) {
 	exit();
 }
 else {
 	while (true) {
-		var name = prompt("What is your name?(Optional)");
-		var email = prompt("What is your email(necessary for a follow-up to work on the change)");
+		var name = prompt("What is your name? (Optional)");
 		var subject = prompt("What is the subject you would like to fix?");
         	var body = prompt("What exactly would you like to fix?");
-		if (subject == null||subject == null||email == null) {
-			alert("One or more mandatory catagory was unanswered, only name is optional!");
+		if (subject == null||subject == null||name == null) {
+			alert("One or more catagory was cancelled")
+			if (name == null) {
+				alert("when answering name, if you would like to have no name click ok without typing and not cancel");
+			}
 		}
 		else {
 			break;
