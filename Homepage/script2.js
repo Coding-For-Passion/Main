@@ -1,4 +1,3 @@
-// alert("Sign-In is currently disabled on the main page, A Sign-in popup will appear shortly!");
 var f = confirm("Are you sure you want to make changes to this website (please note changes will not be immediate)");
 if (f == false) {
 	exit();
@@ -7,7 +6,7 @@ else {
 	while (true) {
 		var subject = prompt("What is the subject you would like to fix?");
         var body = prompt("What exactly would you like to fix?");
-		if {
+		if (subject == null||subject == null) {
 			alert("Nothing Submitted");
 		}
 		else {
