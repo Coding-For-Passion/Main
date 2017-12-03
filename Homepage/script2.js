@@ -15,10 +15,10 @@ else {
 			break;
         }
 	}
-		subject = "Fix: " + subject;
+		subject = "Fix: " + subject + " From: " + name + " Email: " + email;
 		body = "A user has requested to fix: " + body;
-		emailjs.send("AI_website_fix", "ai_website_fix", {"from_name":name,"from_email":subject,"reply_to":email,"message_html":body})
-/*		var popupBlockerChecker = {
+		
+		var popupBlockerChecker = {
 			check: function(popup_window) {
           var _scope = this;
             if (popup_window) {
@@ -45,4 +45,3 @@ else {
 var popup = window.open("mailto:wesbob12@gmail.com" + "?subject=" + subject + "&body=" + body);
 popupBlockerChecker.check(popup);
 }
-*/
