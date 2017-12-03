@@ -12,8 +12,9 @@ function AI() {
   } else {
     nims -= (nims % 4); 
   }
-  document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
-  if (nims == 0) {
+  if (nims > 0) {
+  document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;}
+  else if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Lose!!"
   } else if (nims < 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
