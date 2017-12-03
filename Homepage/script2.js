@@ -8,7 +8,7 @@ else {
 		var subject = prompt("What is the subject you would like to fix?");
         	var body = prompt("What exactly would you like to fix?");
 		if (subject == null||subject == null||name == null) {
-			alert("One or more catagory was cancelled")
+			alert("One or more catagory was cancelled");
 			if (name == null) {
 				alert("when answering name, if you would like to have no name click ok without typing and not cancel");
 			}
