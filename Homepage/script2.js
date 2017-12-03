@@ -1,7 +1,7 @@
 // alert("Sign-In is currently disabled on the main page, A Sign-in popup will appear shortly!");
 var f = confirm("Are you sure you want to make changes to this website (please note changes will not be immediate)");
 if (f == false) {
-	Location.replace("index.html");
+	exit();
 }
 else {
 	while (true) {
