@@ -25,10 +25,22 @@ function AI() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;}
   else if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Lose!!"
+    var con = confirm("Would you like to play again?")
+    if (con == false) {
     location.replace('../Homepage/homepage.html');
+    }
+    if (con == true) {
+    location.replace('nim.html');
+    }
   } else if (nims < 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
+    var con = confirm("Would you like to play again?")
+    if (con == false) {
     location.replace('../Homepage/homepage.html');
+    }
+    if (con == true) {
+    location.replace('nim.html');
+    }
   }
   yourTurn = true;
 }
