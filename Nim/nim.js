@@ -8,11 +8,11 @@ function play() {
       nims -= document.getElementById("select").value; 
       document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
       yourTurn = false; 
+      setTimeout(AI, 2000);
     } else {
       window.alert("It isn't your turn yet!!"); 
     }
   }
-  setTimeout(AI, 2000);
 }
 
 function AI() {
