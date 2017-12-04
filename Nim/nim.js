@@ -3,10 +3,14 @@ var yourTurn = true;
 function play() {
   if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
-  } else if (yourTurn == true) {
-    nims -= document.getElementById("select").value; 
-    document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
-    yourTurn = false;
+  } else {
+    if (yourTurn == true) {
+      nims -= document.getElementById("select").value; 
+      document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
+      yourTurn = false; 
+    } else {
+      window.alert("It isn't your turn yet!!"); 
+    }
   }
   setTimeout(AI, 2000);
 }
