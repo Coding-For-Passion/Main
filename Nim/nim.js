@@ -19,7 +19,7 @@ function AI() {
   if (nims % 4 == 0) {
     nims -= Math.floor(Math.random() * 3) + 1;
   } else {
-    nims -= (nims % 4); 
+    nims = (nims % 4); 
   }
   if (nims > 0) {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;}
