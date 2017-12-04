@@ -1,10 +1,12 @@
 var nims = 21;
+var yourTurn = true;
 function play() {
   if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
-  } else {
+  } else if (yourTurn == true) {
     nims -= document.getElementById("select").value; 
     document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
+    yourTurn = false;
   }
   setTimeout(AI, 2000);
 }
@@ -24,4 +26,5 @@ function AI() {
     document.getElementById("nims").innerHTML = "You Win!!"
     location.replace('../Homepage/homepage.html');
   }
+  yourTurn = true;
 }
