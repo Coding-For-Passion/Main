@@ -1,8 +1,11 @@
 var nims = 21;
 function play() {
-  nims -= document.getElementById("select").value; 
-  document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
-  if (nims == 0) {document.getElementById("nims").innerHTML = "You Win!!"}
+  if (nims == 0) {
+    document.getElementById("nims").innerHTML = "You Win!!"
+  } else {
+    nims -= document.getElementById("select").value; 
+    document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
+  }
   setTimeout(AI, 2000);
 }
 
