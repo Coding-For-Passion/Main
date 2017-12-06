@@ -1,9 +1,9 @@
 var nims = 21;
-firstTurn = prompt("Would you like to go first?");
-if (firstTurn = true) {
+firstTurn = confirm("Would you like to go first?");
+if (firstTurn == true) {
   var yourTurn = true;
 }
-if (firstTurn = false) {
+if (firstTurn == false) {
   var yourTurn = false;
 }
 function play() {
