@@ -4,10 +4,11 @@ if (firstTurn == true) {
   var yourTurn = true;
 }
 if (firstTurn == false) {
-  var yourTurn = false;
+  document.getElementById("nims").innerHTML = "Nims Remaining: 20"
+  alert("Your turn!");
+  var yourTurn = true;
 }
 function play() {
-  setTimeout(AI, 2000);
   if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
   } else {
