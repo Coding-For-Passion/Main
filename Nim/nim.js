@@ -7,6 +7,7 @@ if (firstTurn == false) {
   var yourTurn = false;
 }
 function play() {
+  setTimeout(AI, 2000);
   if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
   } else {
