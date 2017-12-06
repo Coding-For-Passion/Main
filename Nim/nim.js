@@ -1,5 +1,11 @@
 var nims = 21;
-var yourTurn = true;
+firstTurn = prompt("Would you like to go first?");
+if (firstTurn = true) {
+  var yourTurn = true;
+}
+if (firstTurn = false) {
+  var yourTurn = false;
+}
 function play() {
   if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
@@ -10,7 +16,7 @@ function play() {
       yourTurn = false; 
       setTimeout(AI, 2000);
     } else {
-      window.alert("It isn't your turn yet!!"); 
+      alert("It isn't your turn yet!!"); 
     }
   }
 }
