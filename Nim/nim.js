@@ -1,12 +1,12 @@
 var nims = 21;
+var yourTurn = true;
 firstTurn = confirm("Would you like to go first?");
 if (firstTurn == true) {
-  var yourTurn = true;
+  yourTurn = true;
 }
 if (firstTurn == false) {
   document.getElementById("nims").innerHTML = "Nims Remaining: 20"
-  alert("Your turn!");
-  var yourTurn = true;
+  yourTurn = true;
 }
 function play() {
   if (nims == 0) {
