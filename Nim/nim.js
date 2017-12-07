@@ -5,7 +5,7 @@ if (firstTurn == true) {
   yourTurn = true;
 }
 if (firstTurn == false) {
-  document.getElementById("nims").innerHTML = "Nims Remaining: 20"
+  setTimeout(AI, 2000);
   yourTurn = true;
 }
 function play() {
