@@ -4,8 +4,10 @@ var set = prompt("How many nim would you like to start with? ");
 if (set != null) {
   nims = set;
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
+  setTimeout(all, 100)
 }
-firstTurn = confirm("Would you like to go first?");
+function all() {
+var firstTurn = confirm("Would you like to go first?");
 if (firstTurn == true) {
   yourTurn = true;
 }
@@ -52,4 +54,5 @@ function AI() {
    setTimeout(playAgain,500);
   }
   yourTurn = true;
+}
 }
