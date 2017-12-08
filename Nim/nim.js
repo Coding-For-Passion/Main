@@ -22,7 +22,15 @@ function play() {
     }
   }
 }
-
+function playAgain() {
+var con = confirm("Would you like to play again?")
+    if (con == false) {
+    location.replace('../Homepage/homepage.html');
+    }
+    if (con == true) {
+    location.replace('nim.html');
+    }
+}
 function AI() {
   if (nims % 4 == 0) {
     nims -= Math.floor(Math.random() * 3) + 1;
@@ -33,22 +41,10 @@ function AI() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;}
   else if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Lose!!"
-    var con = confirm("Would you like to play again?")
-    if (con == false) {
-    location.replace('../Homepage/homepage.html');
-    }
-    if (con == true) {
-    location.replace('nim.html');
-    }
+    setTimeout(playAgain,500);
   } else if (nims < 0) {
     document.getElementById("nims").innerHTML = "You Win!!"
-    var con = confirm("Would you like to play again?")
-    if (con == false) {
-    location.replace('../Homepage/homepage.html');
-    }
-    if (con == true) {
-    location.replace('nim.html');
-    }
+   setTimeout(playAgain,500);
   }
   yourTurn = true;
 }
