@@ -1,5 +1,9 @@
 var nims = 21;
 var yourTurn = true;
+var set = prompt("How many nim would you like to start with?");
+if (set != null && Number.isInteger(set)) {
+  document.getElementById("nims").innerHTML = set;
+}
 firstTurn = confirm("Would you like to go first?");
 if (firstTurn == true) {
   yourTurn = true;
