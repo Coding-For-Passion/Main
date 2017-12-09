@@ -1,3 +1,4 @@
+function all() {
 var f = confirm("Are you sure you want to make changes to this website? Please note changes will not be immediate");
 if (f == false) {
 	exit();
@@ -46,4 +47,5 @@ else {
     };
 var popup = window.open("mailto:wesbob12@gmail.com" + "?subject=" + subject + "&body=" + body);
 popupBlockerChecker.check(popup);
+}
 }
