@@ -38,6 +38,7 @@ var con = confirm("Would you like to play again?")
     }
 }
 function AI() {
+  document.getElementById("move").innerHTML = "AI Move: ";
   if (nims % 4 == 0) {
     nims -= Math.floor(Math.random() * 3) + 1;
   } else {
@@ -53,4 +54,5 @@ function AI() {
    setTimeout(playAgain,500);
   }
   yourTurn = true;
+  document.getElementById("move").innerHTML = "Your Move: ";
 }
