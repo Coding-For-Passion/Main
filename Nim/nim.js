@@ -4,7 +4,8 @@ function nameThis() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
 var set = prompt("How many nim would you like to start with? ");
-if (set != null) {
+set2 = set.length()
+if (set != null || set2 < 3 || set2 > 1) {
   nims = set;
   
   setTimeout(nameThis,100);
