@@ -4,8 +4,8 @@ function nameThis() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
 var set = prompt("How many nim would you like to start with? ");
-set2 = set.length;
-if (set != null || set2 < 3) {
+var set2 = set.length;
+if (set != null && set2 < 3) {
   nims = set;
   
   setTimeout(nameThis,100);
@@ -23,6 +23,7 @@ function play() {
       nims -= document.getElementById("select").value; 
       document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
       yourTurn = false; 
+      document.getElementById("move").innerHTML = "AI Move: ";
       setTimeout(AI, 2000);
     } else {
       alert("It isn't your turn yet!!"); 
@@ -39,7 +40,7 @@ var con = confirm("Would you like to play again?")
     }
 }
 function AI() {
-  document.getElementById("move").innerHTML = "AI Move: ";
+  document.getElementById("move").innerHTML = "AI Move";
   if (nims % 4 == 0) {
     nims -= Math.floor(Math.random() * 3) + 1;
   } else {
@@ -54,7 +55,7 @@ function AI() {
     document.getElementById("nims").innerHTML = "You Win!!"
    setTimeout(playAgain,500);
   }
-  document.getElementById("move").innerHTML = "Your Move: ";
+  document.getElementById("move").innerHTML = "Your Move";
   yourTurn = true;
   
 }
