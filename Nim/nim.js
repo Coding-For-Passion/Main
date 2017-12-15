@@ -54,6 +54,7 @@ function AI() {
     document.getElementById("nims").innerHTML = "You Win!!"
    setTimeout(playAgain,500);
   }
-  yourTurn = true;
   document.getElementById("move").innerHTML = "Your Move: ";
+  yourTurn = true;
+  
 }
