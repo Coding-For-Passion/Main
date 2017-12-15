@@ -1,11 +1,16 @@
 var nims = 21;
 var yourTurn = true;
+var ifNumber = true;
 function nameThis() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
 var set = prompt("How many nim would you like to start with? ");
 var set2 = set.length;
-if (set != null && set2 < 3) {
+var set3 = set.isNaN;
+if (set3) {
+  ifNumber = false;
+}
+if (set != null && set2 < 3 && ifNumber) {
   nims = set;
   
   setTimeout(nameThis,100);
