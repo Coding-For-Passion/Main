@@ -1,19 +1,19 @@
 var nims = 21;
 var yourTurn = true;
 var ifNumber = true;
-function nameThis() {
+function nimDisplayReset() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
-var set = prompt("How many nim would you like to start with? ");
-var set2 = set.length;
-var set3 = set.isNaN;
-if (set3) {
+var userChoice = prompt("How many nim would you like to start with? ");
+var userChoiceLength = userChoice.length;
+var ifNumber2 = userChoice.isNaN;
+if (ifNumber2) {
   ifNumber = false;
 }
-if (set != null && set2 < 3 && ifNumber) {
-  nims = set;
+if (userChoice != null && userChoiceLength < 3 && userChoiceLength > 1 && ifNumber) {
+  nims = userChoice;
   
-  setTimeout(nameThis,100);
+  setTimeout(nimDisplayReset,100);
 }
 var firstTurn = confirm("Would you like to go first?");
 
