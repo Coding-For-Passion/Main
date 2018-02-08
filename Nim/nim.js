@@ -1,22 +1,36 @@
 var nims = 21;
 var yourTurn = true;
-var ifNumber = true;
+var retry = false;
+var userChoice;
+var userChoiceLength;
+var ifNumber;
 function nimDisplayReset() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
-var userChoice = prompt("How many nim would you like to start with? ");
-var userChoiceLength = userChoice.length;
-var ifNumber2 = userChoice.isNaN;
-if (ifNumber2) {
-  ifNumber = false;
+function userChoosing() {
+  userChoice = prompt("How many nim would you like to start with? ");
+  var firstTurn = confirm("Would you like to go first?");
+  userChoiceLength = userChoice.length;
+  ifNumber = userChoice.isNaN;
+  if (ifNumber) {
+    retry = confirm("Invalid number, retry?");
+    if (retry) {
+      userChoosing();
+    }
+  }
+  else if (userChoice != null && userChoiceLength < 3 && userChoiceLength > 1) {
+    nims = userChoice;
+    
+    setTimeout(nimDisplayReset,100);
+  }
+  else {
+    retry = confirm("Invalid number, retry?");
+    if (retry) {
+      userChoosing();
+    }
+  }
 }
-if (userChoice != null && userChoiceLength < 3 && userChoiceLength > 1 && ifNumber) {
-  nims = userChoice;
-  
-  setTimeout(nimDisplayReset,100);
-}
-var firstTurn = confirm("Would you like to go first?");
-
+userChoosing();
 if (firstTurn == false) {
   setTimeout(AI, 2000);
 }
