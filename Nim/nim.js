@@ -1,5 +1,6 @@
 var nims = 21;
 var yourTurn = true;
+var firstTurn = true;
 var retry = false;
 var userChoice;
 var userChoiceLength;
@@ -19,7 +20,7 @@ function nimCounterReset() {
 }
 function userChoosing() {
   userChoice = prompt("How many nim would you like to start with? ");
-  var firstTurn = confirm("Would you like to go first?");
+  firstTurn = confirm("Would you like to go first?");
   userChoiceLength = userChoice.length;
   ifNumber = userChoice.isNaN;
   if (ifNumber) {
