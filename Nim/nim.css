@@ -3,3 +3,6 @@ body {
   text-align: center;
   background-color: Aqua;
 }
+#nimDisplay {
+  font-size: 25px;
+}
