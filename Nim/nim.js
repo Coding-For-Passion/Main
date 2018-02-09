@@ -4,7 +4,17 @@ var retry = false;
 var userChoice;
 var userChoiceLength;
 var ifNumber;
-function nimDisplayReset() {
+var nimDisplay;
+function display(nims) {
+  for(var i = 1; i<= nims; i++) {
+    nimDisplay = nimDisplay + "| ";
+  }
+  document.getElementByID("nimDisplay").innerHTML = nimDisplay;
+}
+function displayReset() {
+  document.getElementByID("nimDisplay").innerHTML = "";
+}
+function nimCounterReset() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
 function userChoosing() {
@@ -20,8 +30,8 @@ function userChoosing() {
   }
   else if (userChoice != null && userChoiceLength < 3 && userChoiceLength > 1) {
     nims = userChoice;
-    
-    setTimeout(nimDisplayReset,100);
+    display(nims);
+    setTimeout(nimCounterReset,100);
   }
   else {
     retry = confirm("Invalid number, retry?");
@@ -42,6 +52,8 @@ function play() {
       nims -= document.getElementById("select").value; 
       document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
       yourTurn = false; 
+      displayReset();
+      display(nims);
       document.getElementById("move").innerHTML = "AI Move: ";
       setTimeout(AI, 2000);
     } else {
@@ -60,6 +72,7 @@ var con = confirm("Would you like to play again?")
 }
 function AI() {
   document.getElementById("move").innerHTML = "AI Move";
+  
   if (nims % 4 == 0) {
     nims -= Math.floor(Math.random() * 3) + 1;
   } else {
@@ -75,6 +88,8 @@ function AI() {
    setTimeout(playAgain,500);
   }
   document.getElementById("move").innerHTML = "Your Move";
+  displayReset();
+  display(nims);
   yourTurn = true;
   
 }
