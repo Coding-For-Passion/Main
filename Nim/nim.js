@@ -29,7 +29,7 @@ function userChoosing() {
       userChoosing();
     }
   }
-  else if (userChoiceLength = 2) {
+  else if (userChoiceLength == 2) {
     nims = userChoice;
 //    display(nims);
     setTimeout(nimCounterReset,100);
