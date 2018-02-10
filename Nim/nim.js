@@ -1,3 +1,7 @@
+/*
+This is the code that contains the Nim Game
+Developed By Riley And Alexander
+*/
 var nims = 21;
 var yourTurn = true;
 var firstTurn = true;
