@@ -19,23 +19,23 @@ function nimCounterReset() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
 function userChoosing() {
-  userChoice = prompt("How many nim would you like to start with? ");
+  userChoice = prompt("How many nim would you like to start with?(2 digit number) ");
   firstTurn = confirm("Would you like to go first?");
   userChoiceLength = userChoice.length;
   ifNumber = userChoice.isNaN;
-  if (ifNumber) {
-    retry = confirm("Invalid number, retry?");
+  if (userChoice == null || ifNumber) {
+    retry = confirm("ERROR: NaN or no Input\nNot a number, retry?" );
     if (retry) {
       userChoosing();
     }
   }
-  else if (userChoice != null && userChoiceLength < 3 && userChoiceLength > 1) {
+  else if (userChoiceLength = 2) {
     nims = userChoice;
 //    display(nims);
     setTimeout(nimCounterReset,100);
   }
   else {
-    retry = confirm("Invalid number, retry?");
+    retry = confirm("ERROR: Number length invalid\n Number is not a valid length(2 digits), retry?" );
     if (retry) {
       userChoosing();
     }
