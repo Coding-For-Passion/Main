@@ -5,6 +5,8 @@ var retry = false;
 var userChoice;
 var userChoiceLength;
 var ifNumber;
+var EXPERIMENTAL_MODE = true;
+var modeMessage = "Hi, I am Jeeves, your trusty AI. I would be delighted to play a game of Nim";
 //var nimDisplay;
 //function display(nims) {
 //  for(var i = 1; i<= nims; i++) {
@@ -15,11 +17,15 @@ var ifNumber;
 //function displayReset() {
 //  document.getElementByID("nimDisplay").innerHTML = "";
 //}
+function checkMode(mode) {
+  if (mode) {
+    modeMessage = "EXPERIMENTAL_MODE";
+  }
 function nimCounterReset() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
 function userChoosing() {
-  userChoice = prompt("How many nim would you like to start with?(2 digit number) ");
+  userChoice = prompt("How many nim would you like to start with?(2 digit number)");
   firstTurn = confirm("Would you like to go first?");
   userChoiceLength = userChoice.length;
   ifNumber = userChoice.isNaN;
@@ -41,6 +47,8 @@ function userChoosing() {
     }
   }
 }
+checkMode(EXPERIMENTAL_MODE);
+alert(modeMessage);  
 alert("To play Nim, you choose a number of 'Nims', and then you choose whether to go first or second. You and the AI take turns removing blocks — each player may remove one to three nims, whichever player takes the last Nim wins.");
 userChoosing();
 if (firstTurn == false) {
