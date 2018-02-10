@@ -12,6 +12,6 @@ Members: Alexander, Enzo, and Riley
 
 # How-to
 
-Purpose: Entertainment or ewducation
+Purpose: Entertainment or education
 
 Usage: Go to https://Coding-For-Passion.github.io/Main/Homepage/homepage.html to get started on our homepage, and look at our projectsa from there.
