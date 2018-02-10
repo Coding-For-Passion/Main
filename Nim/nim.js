@@ -25,6 +25,7 @@ function checkMode(mode) {
   if (mode) {
     modeMessage = "EXPERIMENTAL_MODE";
   }
+}
 function nimCounterReset() {
   document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
 }
@@ -72,31 +73,33 @@ function AI() {
 //  display(nims);
   yourTurn = true;
 }
-  function play() {
-    if (nims == 0) {
+function play() {
+  if (nims == 0) {
     document.getElementById("nims").innerHTML = "You Win!!";
-  } else {
+  } 
+  else {
     if (yourTurn == true) {
       nims -= document.getElementById("select").value; 
       document.getElementById("nims").innerHTML = "Nims Remaining: " + nims;
       yourTurn = false; 
-//      displayReset();
-//      display(nims);
+//    displayReset();
+//    display(nims);
       document.getElementById("move").innerHTML = "AI Move: ";
       setTimeout(AI, 2000);
-    } else {
+    } 
+    else {
       alert("It isn't your turn yet!!"); 
     }
   }
-  }
-  function playAgain() {
+}
+function playAgain() {
   var con = confirm("Would you like to play again?");
-    if (con == false) {
-      location.replace('../Homepage/homepage.html');
-    }
-    if (con == true) {
-      location.replace('nim.html');
-    }
+  if (con == false) {
+    location.replace('../Homepage/homepage.html');
+  }
+  if (con == true) {
+    location.replace('nim.html');
+  }
 }
   checkMode(EXPERIMENTAL_MODE);
   alert(modeMessage);  
