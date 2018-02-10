@@ -7,9 +7,9 @@ var yourTurn = true;
 var firstTurn = true;
 var retry = false;
 var userChoice;
-var userChoiceLength;
+var userChoiceLength = 0;
 var ifNumber;
-var EXPERIMENTAL_MODE = true;
+var EXPERIMENTAL_MODE = false;
 var modeMessage = "Hi, I am Jeeves, your trusty AI. I would be delighted to play a game of Nim";
 //var nimDisplay;
 //function display(nims) {
@@ -32,8 +32,10 @@ function nimCounterReset() {
 function userChoosing() {
   userChoice = prompt("How many nim would you like to start with?(2 digit number)");
   firstTurn = confirm("Would you like to go first?");
-  userChoiceLength = userChoice.length;
   ifNumber = isNaN(userChoice);
+  if (userChoice != null) {
+    userChoiceLength = userChoice.length
+  }
   if (userChoice == null || ifNumber) {
     retry = confirm("ERROR: NaN or no Input\nNot a number, retry?" );
     if (retry) {
