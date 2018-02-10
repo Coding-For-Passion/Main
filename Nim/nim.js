@@ -108,5 +108,6 @@ function playAgain() {
   alert("To play Nim, you choose a number of 'Nims', and then you choose whether to go first or second. You and the AI take turns removing blocks — each player may remove one to three nims, whichever player takes the last Nim wins.");
   userChoosing();
   if (firstTurn == false) {
+    yourTurn = false;
     setTimeout(AI, 2000);
   }
