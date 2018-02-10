@@ -109,5 +109,6 @@ function playAgain() {
   userChoosing();
   if (firstTurn == false) {
     yourTurn = false;
+    document.getElementById("move").innerHTML = "AI Move";
     setTimeout(AI, 2000);
   }
