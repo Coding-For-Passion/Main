@@ -10,7 +10,7 @@ var userChoice;
 var userChoiceLength = 0;
 var ifNumber;
 var EXPERIMENTAL_MODE = false;
-var modeMessage = "Hi, I am Jeeves, your trusty AI. I would be delighted to play a game of Nim";
+var modeMessage = "Hi, I am your trusty AI. I would be delighted to play a game of Nim";
 //var nimDisplay;
 //function display(nims) {
 //  for(var i = 1; i<= nims; i++) {
