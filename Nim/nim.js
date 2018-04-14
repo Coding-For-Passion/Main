@@ -9,7 +9,7 @@ var retry = false;
 var userChoice;
 var userChoiceLength = 0;
 var ifNumber;
-var EXPERIMENTAL_MODE = false;
+var EXPERIMENTAL_MODE = False;
 var modeMessage = "Hi, I am your trusty AI. I would be delighted to play a game of Nim";
 //var nimDisplay;
 //function display(nims) {
