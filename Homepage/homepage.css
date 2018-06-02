@@ -4,7 +4,7 @@ body {
   /* Bad text colour: color: Orange; */
   text-align: center;
   /* Bad Background: background-color: Aqua; */
-  background-image: url("../cool background.jpg");
+  background-image: url("../cool background.png");
 }
 p {
   font-family: 'Open Sans', sans-serif;
