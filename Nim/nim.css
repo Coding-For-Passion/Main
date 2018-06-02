@@ -1,7 +1,7 @@
 body {
   color: Orange;
   text-align: center;
-  background-color: Aqua;
+  /* background-color: Aqua; */
 }
 #nimDisplay {
   font-size: 25px;
