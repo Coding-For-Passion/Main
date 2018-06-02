@@ -1,7 +1,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
-  /* Bad text colour: color: Orange; */
+   color: White;
   text-align: center;
   /* Bad Background: background-color: Aqua; */
   background-image: url("cool background.jpg");
@@ -11,7 +11,7 @@ body {
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  /* Bad text colour: color: Orange; */
+  color: White;
   text-align: center;
   /* background-color: Aqua; */
 }
@@ -22,13 +22,13 @@ p {
 }
 h1 {
   font-family: 'Atomic Age', cursive;
-  /* Bad text colour: color: Orange; */
+  color: White;
   text-align: center;
   /*background-color: Aqua; */
 }
 h2 {
   font-family: 'Audiowide', cursive;
-  /* Bad text colour: color: Orange; */
+  color: White;
   text-align: center;
   /*background-color: Aqua; */
 }
