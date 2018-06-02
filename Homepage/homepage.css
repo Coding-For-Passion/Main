@@ -5,6 +5,9 @@ body {
   text-align: center;
   /* Bad Background: background-color: Aqua; */
   background-image: url("cool background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
 }
 p {
   font-family: 'Open Sans', sans-serif;
