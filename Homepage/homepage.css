@@ -7,7 +7,6 @@ body {
   background-image: url("../cool background.png");
   background-size:     cover;
   background-repeat:   no-repeat;
-  background-position: center center; 
 }
 p {
   font-family: 'Open Sans', sans-serif;
